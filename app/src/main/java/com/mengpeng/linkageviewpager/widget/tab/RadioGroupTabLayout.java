@@ -1,4 +1,4 @@
-package com.mengpeng.linkageviewpager.widget;
+package com.mengpeng.linkageviewpager.widget.tab;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -198,6 +198,16 @@ public class RadioGroupTabLayout extends RelativeLayout {
             throw new NullPointerException("所填写的颜色值必须以‘#’开头，并且必须是7位（例如#ffffff）或者9位（例如#33ff0000） ");
         }
         radioGroupTabLayout.setBackgroundColor(Color.parseColor(color));
+    }
+
+    public void setCurrentItem(int position) {
+        if (position > list.size()) {
+            ((RadioButton) container.getChildAt(list.size())).setChecked(true);
+        } else if (position < 0) {
+            ((RadioButton) container.getChildAt(0)).setChecked(true);
+        } else {
+            ((RadioButton) container.getChildAt(position)).setChecked(true);
+        }
     }
 
 }

@@ -1,4 +1,4 @@
-package com.mengpeng.linkageviewpager.widget;
+package com.mengpeng.linkageviewpager.widget.tab;
 
 /**
  * 作者：MengPeng

@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 import com.mengpeng.linkageviewpager.widget.indicator.utils.ColorGradient;
 
-/**
- * @author LuckyJayce
- */
 public class OnTransitionTextListener implements Indicator.OnTransitionListener {
     private float selectSize = -1;
     private float unSelectSize = -1;

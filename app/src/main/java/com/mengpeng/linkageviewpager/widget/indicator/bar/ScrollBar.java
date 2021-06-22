@@ -3,10 +3,7 @@ package com.mengpeng.linkageviewpager.widget.indicator.bar;
 import android.view.View;
 
 /**
- * @version 1.0
- *          Indicator的滑动块
- * @author试着飞
- * @date 2014年11月1日
+ * Indicator的滑动块
  */
 public interface ScrollBar {
     public static enum Gravity {

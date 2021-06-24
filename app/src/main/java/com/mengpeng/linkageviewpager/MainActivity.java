@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.mengpeng.linkageviewpager.widget.indicator.adapter.MyAdapter;
 import com.mengpeng.linkageviewpager.widget.tab.LinkTab;
 import com.mengpeng.linkageviewpager.widget.tab.RadioGroupTabLayout;
 import com.mengpeng.linkageviewpager.widget.indicator.listener.Indicator;
@@ -59,35 +60,11 @@ public class MainActivity extends AppCompatActivity {
         int selectColorId = Color.parseColor("#c8c8c8");
         int unSelectColorId = Color.parseColor("#999999");
 
-        tabIndicatorView.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColorId, selectColorId));
+        tabIndicatorView.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColorId, unSelectColorId));
         tabIndicatorView.setScrollBar(new SpringBar(this, selectColorId));
 
         indicatorViewPager = new IndicatorViewPager(tabIndicatorView, viewPager);
-        indicatorViewPager.setAdapter(new IndicatorViewPager.IndicatorViewPagerAdapter() {
-            @Override
-            public int getCount() {//必须实现
-                return mViewList.size();
-            }
-
-            @Override
-            public View getViewForTab(int position, View convertView, ViewGroup container) {
-                if (convertView == null) {
-                    convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.indicator_item, container, false);
-                }
-                TextView textView = (TextView) convertView;
-                textView.setText("●");
-                textView.setTextColor(Color.parseColor("#c8c8c8"));
-                textView.setPadding(4, 0, 4, 0);
-                textView.setTextSize(10);
-                return convertView;
-            }
-
-            @Override
-            public View getViewForPage(int position, View convertView, ViewGroup container) {
-                TextView textView = mViewList.get(position);
-                return textView;
-            }
-        });
+        indicatorViewPager.setAdapter(new MyAdapter(mViewList, this));
 
         indicatorViewPager.setCurrentItem(0, false);
         indicatorViewPager.setOnIndicatorPageChangeListener(new IndicatorViewPager.OnIndicatorPageChangeListener() {
@@ -105,13 +82,11 @@ public class MainActivity extends AppCompatActivity {
         list.add(new LinkTab("测试4", R.drawable.maintab_4_selector));
 
         tabLayout.addTab(list);
-        tabLayout.setRadioGroupTabLayoutBackground(R.color.colorBg);
 
         tabLayout.setOnRadioGroupTabLayoutClickListener(
                 new RadioGroupTabLayout.setOnRadioGroupTabLayoutClickListener() {
                     @Override
                     public void onTabLayoutClickListener(int position) {
-                        Log.d("MainActovity", "下标：" + position);
                         viewPager.setCurrentItem(position);
                     }
                 });

@@ -3,4 +3,4 @@
 
 ### 功能正在完善中，请各位看官不要着急，预计 V1.0.0 完成日期 2018-3-10 之前
 
-![avatar](https://gitee.com/mengpeng920223/LinkageViewPager/blob/master/image/image1.gif)
+![image](https://gitee.com/mengpeng920223/LinkageViewPager/blob/master/image/image1.gif)

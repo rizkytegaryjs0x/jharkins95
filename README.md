@@ -9,7 +9,7 @@
 - 5.ViewPager + 小圆点 + TabLayout联动
 - 功能后续慢慢添加
 
-#### 1. viewpager+小圆点联动
+#### 1. viewpager+小圆点联动(可用于欢迎页面/轮播等)
 ![](image/image1.gif)
 
 #### 2.viewpager + RadioGroup联动

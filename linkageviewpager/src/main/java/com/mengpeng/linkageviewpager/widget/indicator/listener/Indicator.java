@@ -1,12 +1,12 @@
 package com.mengpeng.linkageviewpager.widget.indicator.listener;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.mengpeng.linkageviewpager.widget.indicator.bar.ScrollBar;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public interface Indicator {
     /**

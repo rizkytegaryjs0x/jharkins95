@@ -16,18 +16,17 @@
 
 package com.mengpeng.linkageviewpager.widget.indicator.adapter;
 
-import java.util.ArrayList;
-
-import android.os.Bundle;
-import android.os.Parcelable;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.app.FragmentTransaction;
+import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 public abstract class FragmentListPageAdapter extends PagerAdapter {
     private static final boolean DEBUG = false;

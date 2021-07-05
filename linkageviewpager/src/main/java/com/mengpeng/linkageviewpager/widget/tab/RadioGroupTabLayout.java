@@ -16,7 +16,7 @@ import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.mengpeng.linkageviewpager.R;
+import com.mengpeng.linkageviewpagers.R;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,23 +1,19 @@
 package com.mengpeng.linkageviewpager;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.mengpeng.linkageviewpager.widget.indicator.TabIndicatorView;
+import com.mengpeng.linkageviewpager.widget.indicator.adapter.IndicatorViewPager;
 import com.mengpeng.linkageviewpager.widget.indicator.adapter.MyAdapter;
+import com.mengpeng.linkageviewpager.widget.indicator.bar.SpringBar;
+import com.mengpeng.linkageviewpager.widget.indicator.listener.OnTransitionTextListener;
 import com.mengpeng.linkageviewpager.widget.tab.LinkTab;
 import com.mengpeng.linkageviewpager.widget.tab.RadioGroupTabLayout;
-import com.mengpeng.linkageviewpager.widget.indicator.listener.Indicator;
-import com.mengpeng.linkageviewpager.widget.indicator.adapter.IndicatorViewPager;
-import com.mengpeng.linkageviewpager.widget.indicator.listener.OnTransitionTextListener;
-import com.mengpeng.linkageviewpager.widget.indicator.bar.SpringBar;
-import com.mengpeng.linkageviewpager.widget.indicator.TabIndicatorView;
 
 import java.util.ArrayList;
 import java.util.List;

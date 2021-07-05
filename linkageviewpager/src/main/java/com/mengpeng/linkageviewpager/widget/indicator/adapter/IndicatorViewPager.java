@@ -15,18 +15,18 @@ limitations under the License.
  */
 package com.mengpeng.linkageviewpager.widget.indicator.adapter;
 
-import android.graphics.drawable.Drawable;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.graphics.drawable.Drawable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mengpeng.linkageviewpager.widget.indicator.listener.Indicator;
 import com.mengpeng.linkageviewpager.widget.indicator.SViewPager;
 import com.mengpeng.linkageviewpager.widget.indicator.bar.ScrollBar;
+import com.mengpeng.linkageviewpager.widget.indicator.listener.Indicator;
 
 /**
  * 将indicatorView，ViewPager联合使用

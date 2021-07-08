@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.mengpeng.linkageviewpagers.R;
+import com.mengpeng.linkageviewpager.R;
 
 import java.util.List;
 
@@ -17,10 +17,10 @@ import java.util.List;
  * 说明：
  */
 public abstract class DefaultIndicatorAdapter extends IndicatorViewPager.IndicatorViewPagerAdapter {
-    private List<TextView> list;
+    private List<View> list;
     private Context context;
 
-    public DefaultIndicatorAdapter(List<TextView> list, Context context) {
+    public DefaultIndicatorAdapter(List<View> list, Context context) {
         this.list = list;
         this.context = context;
     }

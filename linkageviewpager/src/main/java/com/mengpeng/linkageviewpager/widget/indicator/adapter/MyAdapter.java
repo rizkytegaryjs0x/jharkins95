@@ -13,10 +13,10 @@ import java.util.List;
  * 说明：
  */
 public class MyAdapter extends DefaultIndicatorAdapter {
-    private List<TextView> list;
+    private List<View> list;
     private Context context;
 
-    public MyAdapter(List<TextView> list, Context context) {
+    public MyAdapter(List<View> list, Context context) {
         super(list, context);
         this.list = list;
         this.context = context;
@@ -24,6 +24,11 @@ public class MyAdapter extends DefaultIndicatorAdapter {
 
     @Override
     public View getViewForPage(int position, View convertView, ViewGroup container) {
+
+
+
+
+
         return list.get(position);
     }
 }
